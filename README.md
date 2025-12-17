@@ -5,7 +5,6 @@ It implements an identification-free, data-driven safety-critical control framew
 The repository includes two case studies: lane keeping (LK) and adaptive cruise control (ACC).
 
 ## Repository contents
-````markdown
 ```text
 .
 ├─ LK_demo.mlx                 # Lane-keeping (LK) main demo: runs all LK simulations and generates plots (calls LK_sim.slx)
