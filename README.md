@@ -80,21 +80,21 @@ LK (with CIS, sampling period **T = 0.1 s**, **N = 21200** samples): mean **6.21
 <table align="center">
   <tr>
     <td align="center">
-      <img src="Figures/LK3.png" width="320" alt="LK Case 1 lateral displacement"><br>
+      <img src="Figures/LK3.png" width="240" alt="LK Case 1 lateral displacement"><br>
       <b>Case 1 (with CIS): Lateral displacement</b>
     </td>
     <td align="center">
-      <img src="Figures/LK5.png" width="320" alt="LK Case 1 steering angle"><br>
+      <img src="Figures/LK5.png" width="240" alt="LK Case 1 steering angle"><br>
       <b>Case 1 (with CIS): Steering angle</b>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="Figures/LK4.png" width="320" alt="LK Case 2 lateral displacement"><br>
+      <img src="Figures/LK4.png" width="240" alt="LK Case 2 lateral displacement"><br>
       <b>Case 2 (no CIS): Lateral displacement</b>
     </td>
     <td align="center">
-      <img src="Figures/LK6.png" width="320" alt="LK Case 2 steering angle"><br>
+      <img src="Figures/LK6.png" width="240" alt="LK Case 2 steering angle"><br>
       <b>Case 2 (no CIS): Steering angle</b>
     </td>
   </tr>
