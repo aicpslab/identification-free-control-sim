@@ -46,6 +46,21 @@ The repository includes two case studies: lane keeping (LK) and adaptive cruise 
 2. The script calls `ACC_Sample.slx`, `ACC_sim.slx`, and `ACC_draw.mlx`, and exports EPS figures to `Figures/`.
 3. (Optional) To regenerate figures without rerunning Simulink, load `ACC_data.mat` and run `ACC_draw.mlx`.
 
+## Requirements
+
+The code has been tested with the following environment:
+
+- **OS:** Windows Microsoft Windows 11 专业版 (Windows 11 Pro)
+- **CPU:** 12th Gen Intel(R) Core(TM) i7-12700KF (12 cores)
+- **MATLAB:** MATLAB 25.1.0.2973910 (R2025a) Update 1
+- **Solvers/Libraries:** MOSEK 11.0.14 (Build date: 2025-04-03); YALMIP 20250626; MPT3 3.2.1
+- **MATLAB toolboxes (required by LK_demo + LK_sim):** Control System Toolbox; Simulink
+- **MATLAB toolboxes (required by ACC_demo + ACC_Sample + ACC_sim):** Automated Driving Toolbox; Simulink
+
+> Notes:
+> - MOSEK requires a valid license.
+> - Make sure YALMIP and MPT3 are on the MATLAB path before running the demos.
+
 
 
 ## **Related Tools and Software**
