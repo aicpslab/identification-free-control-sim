@@ -6,7 +6,6 @@ The repository includes two case studies: lane keeping (LK) and adaptive cruise 
 
 ````markdown
 ## Repository contents
-```text
 .
 ├─ LK_demo.mlx                 # Lane-keeping (LK) main demo: runs all LK simulations and generates plots (calls LK_sim.slx)
 ├─ LK_sim.slx                  # LK Simulink model (invoked by LK_demo.mlx)
@@ -28,7 +27,7 @@ The repository includes two case studies: lane keeping (LK) and adaptive cruise 
 ├─ slprj/                      # (auto-generated) Simulink build cache (optional; can be deleted)
 ├─ *.slxc                      # (auto-generated) Simulink cache files (optional; can be deleted)
 └─ README.md
-````
+
 
 > **Notes**
 >
