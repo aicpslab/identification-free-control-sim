@@ -4,6 +4,7 @@ This repository contains the MATLAB/Simulink simulation code accompanying our pa
 It implements an identification-free, data-driven safety-critical control framework that embeds control barrier function (CBF) constraints into an online CLF–CBF quadratic program, while enforcing recursive feasibility via data-driven (robust) control-invariant set constraints under state/input limits.
 The repository includes two case studies: lane keeping (LK) and adaptive cruise control (ACC).
 
+## Repository contents
 ```text
 ```
 .
