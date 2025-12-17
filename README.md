@@ -63,61 +63,65 @@ The code has been tested with the following environment:
 > - MOSEK requires a valid license.
 
 ---
-## **Features**
-### **Simulation Results For Lane-Keeping Problem**
 
-1. Lateral displacement and front wheel steering angle (Case 1 with Control Invariant Set, Case 2 without). 
+## Features
+
+### Simulation Results for Lane-Keeping (LK)
+
+1. Lateral displacement and front wheel steering angle (Case 1 with Control Invariant Set, Case 2 without).
+
 <table align="center">
-    <tr>
-        <td align="center" style="background-color: white;">
-            <img src="https://raw.githubusercontent.com/LJP725/identification-free-control-sim/edit/main/Figures/LK3.png" width="200"><br>
-            <b>Case 1: Lateral Displacement</b>
-        </td>
-        <td align="center" style="background-color: white;">
-            <img src="https://raw.githubusercontent.com/LJP725/identification-free-control-sim/edit/main/Figures/LK5.png" width="200"><br>
-            <b>Case 1: Steering Angle</b>
-        </td>
-    </tr>
-    <tr>
-        <td align="center" style="background-color: white;">
-            <img src="https://raw.githubusercontent.com/LJP725/identification-free-control-sim/edit/main/Figures/LK4.png" width="200"><br>
-            <b>Case 2: Lateral Displacement</b>
-        </td>
-        <td align="center" style="background-color: white;">
-            <img src="https://raw.githubusercontent.com/LJP725/identification-free-control-sim/edit/main/Figures/LK6.png" width="200"><br>
-            <b>Case 2: Steering Angle</b>
-        </td>
-    </tr>
+  <tr>
+    <td align="center">
+      <img src="Figures/LK3.png" width="200"><br>
+      <b>Case 1: Lateral Displacement</b>
+    </td>
+    <td align="center">
+      <img src="Figures/LK5.png" width="200"><br>
+      <b>Case 1: Steering Angle</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="Figures/LK4.png" width="200"><br>
+      <b>Case 2: Lateral Displacement</b>
+    </td>
+    <td align="center">
+      <img src="Figures/LK6.png" width="200"><br>
+      <b>Case 2: Steering Angle</b>
+    </td>
+  </tr>
 </table>
 
-
-2. State variations of other states, \( v, \psi, r \). 
+2. State variations of other states (v, ψ, r).
 
 <table>
-    <tr>
-        <td align="center">
-            <img src="https://raw.githubusercontent.com/LJP725/identification-free-control-sim/edit/main/Figures/LK1.png" width="500"><br>
-            <b>With Control Invariant Set</b>
-        </td>
-        <td align="center">
-            <img src="https://raw.githubusercontent.com/LJP725/identification-free-control-sim/edit/main/Figures/LK2.png" width="500"><br>
-            <b>Without Control Invariant Set</b>
-        </td>
-    </tr>
+  <tr>
+    <td align="center">
+      <img src="Figures/LK1.png" width="500"><br>
+      <b>With Control Invariant Set</b>
+    </td>
+    <td align="center">
+      <img src="Figures/LK2.png" width="500"><br>
+      <b>Without Control Invariant Set</b>
+    </td>
+  </tr>
 </table>
 
-### **Simulation Results For Adaptive Cruise Problem**
+### Simulation Results for Adaptive Cruise Control (ACC)
 
-1.Iteration Process and Robust Control Invariant Set. 
+1. Iteration process and robust control invariant set.
+
 <p align="center">
-    <img src="https://raw.githubusercontent.com/LJP725/identification-free-control-sim/edit/main/Figures/ACC1.png" width="500"><br>
-    <b>Iteration Process and Robust Control Invariant Set.</b>
+  <img src="Figures/ACC1.png" width="500"><br>
+  <b>Iteration Process and Robust Control Invariant Set</b>
 </p>
 
-2.Velocity, Traction Force, and Safety Function Curves for Autonomous Vehicles. 
+2. Velocity, traction force, and safety function curves.
+
 <p align="center">
-    <img src="https://raw.githubusercontent.com/LJP725/identification-free-control-sim/edit/main/Figures/ACC2.png" width="800"><br>
-    <b>Velocity, Traction Force, and Safety Function Curves for Autonomous Vehicles.</b>
+  <img src="Figures/ACC2.png" width="800"><br>
+  <b>Velocity, Traction Force, and Safety Function Curves</b>
 </p>
 
 ---
