@@ -106,11 +106,11 @@ The black polyhedron depicts the projection of the computed CIS; colored curves 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="Figures/LK1.png" width="520" alt="LK with CIS: v, psi, r trajectories"><br>
+      <img src="Figures/LK1.png" width="420" alt="LK with CIS: v, psi, r trajectories"><br>
       <b>With CIS: trajectories remain inside the projected CIS</b>
     </td>
     <td align="center">
-      <img src="Figures/LK2.png" width="520" alt="LK without CIS: v, psi, r trajectories"><br>
+      <img src="Figures/LK2.png" width="420" alt="LK without CIS: v, psi, r trajectories"><br>
       <b>Without CIS: trajectories can exit the projected region</b>
     </td>
   </tr>
@@ -130,7 +130,7 @@ ACC (Case 4: robust + RCIS + margin, sampling period **T = 0.2 s**, **N = 500** 
 **(1) RCIS and iteration outcome**
 
 <p align="center">
-  <img src="Figures/ACC1.png" width="720" alt="ACC RCIS and iteration process"><br>
+  <img src="Figures/ACC1.png" width="540" alt="ACC RCIS and iteration process"><br>
   <b>RCIS (blue) inside the truncated safety set (red)</b>
 </p>
 
@@ -138,7 +138,7 @@ ACC (Case 4: robust + RCIS + margin, sampling period **T = 0.2 s**, **N = 500** 
 Comparison of four controllers: nominal baseline, robust-only, robust + RCIS, robust + RCIS + margin.
 
 <p align="center">
-  <img src="Figures/ACC2.png" width="980" alt="ACC closed-loop trajectories and safety function"><br>
+  <img src="Figures/ACC2.png" width="680" alt="ACC closed-loop trajectories and safety function"><br>
   <b>Closed-loop ACC trajectories and safety evolution under four controller configurations</b>
 </p>
 
