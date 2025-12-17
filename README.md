@@ -62,66 +62,77 @@ The code has been tested with the following environment:
 > Notes:
 > - MOSEK requires a valid license.
 
----
-
 ## Features
 
-### Simulation Results for Lane-Keeping (LK)
+> **GitHub preview note:** GitHub does not render `.eps` files in README.  
+> This repository provides **PNG** copies under `Figures/` for preview, while the **EPS** versions are used for the paper.
 
-1. Lateral displacement and front wheel steering angle (Case 1 with Control Invariant Set, Case 2 without).
+### Lane-Keeping (LK): Effect of the Control Invariant Set (CIS)
+
+**What to look for:** Adding the CIS constraint enforces **recursive feasibility** and keeps the lateral position within lane bounds under the same vertex-initialized tests; without the CIS constraint, some trajectories can violate the lane envelope even when the steering input remains within limits.
+
+**(1) Lateral displacement and steering angle (Case 1: with CIS, Case 2: without CIS)**
 
 <table align="center">
   <tr>
     <td align="center">
-      <img src="Figures/LK3.png" width="200"><br>
-      <b>Case 1: Lateral Displacement</b>
+      <img src="Figures/LK3.png" width="320" alt="LK Case 1 lateral displacement"><br>
+      <b>Case 1 (with CIS): Lateral displacement</b>
     </td>
     <td align="center">
-      <img src="Figures/LK5.png" width="200"><br>
-      <b>Case 1: Steering Angle</b>
+      <img src="Figures/LK5.png" width="320" alt="LK Case 1 steering angle"><br>
+      <b>Case 1 (with CIS): Steering angle</b>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="Figures/LK4.png" width="200"><br>
-      <b>Case 2: Lateral Displacement</b>
+      <img src="Figures/LK4.png" width="320" alt="LK Case 2 lateral displacement"><br>
+      <b>Case 2 (no CIS): Lateral displacement</b>
     </td>
     <td align="center">
-      <img src="Figures/LK6.png" width="200"><br>
-      <b>Case 2: Steering Angle</b>
+      <img src="Figures/LK6.png" width="320" alt="LK Case 2 steering angle"><br>
+      <b>Case 2 (no CIS): Steering angle</b>
     </td>
   </tr>
 </table>
 
-2. State variations of other states (v, ψ, r).
+**(2) State evolution in the (v, psi, r) subspace (projection view for intuition)**  
+The black polyhedron depicts the projection of the computed CIS; colored curves are trajectories initialized at its vertices.
 
-<table>
+<table align="center">
   <tr>
     <td align="center">
-      <img src="Figures/LK1.png" width="500"><br>
-      <b>With Control Invariant Set</b>
+      <img src="Figures/LK1.png" width="520" alt="LK with CIS: v, psi, r trajectories"><br>
+      <b>With CIS: trajectories remain inside the projected CIS</b>
     </td>
     <td align="center">
-      <img src="Figures/LK2.png" width="500"><br>
-      <b>Without Control Invariant Set</b>
+      <img src="Figures/LK2.png" width="520" alt="LK without CIS: v, psi, r trajectories"><br>
+      <b>Without CIS: trajectories can exit the projected region</b>
     </td>
   </tr>
 </table>
 
-### Simulation Results for Adaptive Cruise Control (ACC)
+---
 
-1. Iteration process and robust control invariant set.
+### Adaptive Cruise Control (ACC): Robustness + RCIS + Safety Margin
+
+**What to look for:**  
+- The RCIS is computed inside a truncated safety set and certified robust under the full actuator range (with a reserved braking margin during construction).  
+- In closed-loop simulations, adding **RCIS constraints** prevents feasibility loss that can lead to safety violations; adding a **positive margin** further increases the safety buffer.
+
+**(1) RCIS and iteration outcome**
 
 <p align="center">
-  <img src="Figures/ACC1.png" width="500"><br>
-  <b>Iteration Process and Robust Control Invariant Set</b>
+  <img src="Figures/ACC1.png" width="720" alt="ACC RCIS and iteration process"><br>
+  <b>RCIS (blue) inside the truncated safety set (red)</b>
 </p>
 
-2. Velocity, traction force, and safety function curves.
+**(2) Closed-loop responses (velocity, traction force, and safety function)**  
+Comparison of four controllers: nominal baseline, robust-only, robust + RCIS, robust + RCIS + margin.
 
 <p align="center">
-  <img src="Figures/ACC2.png" width="800"><br>
-  <b>Velocity, Traction Force, and Safety Function Curves</b>
+  <img src="Figures/ACC2.png" width="980" alt="ACC closed-loop trajectories and safety function"><br>
+  <b>Closed-loop ACC trajectories and safety evolution under four controller configurations</b>
 </p>
 
 ---
