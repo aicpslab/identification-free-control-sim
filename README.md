@@ -61,7 +61,6 @@ The code has been tested with the following environment:
 
 > Notes:
 > - MOSEK requires a valid license.
-> - 
 ---
 ## Features
 
